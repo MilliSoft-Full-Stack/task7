@@ -64,3 +64,71 @@ header a{
     background-color: #343a40;
     
 }
+
+section h3 {
+    margin-top: 90px;
+    font-size: 1rem;
+    color: rgb(236, 184, 7);
+    
+}
+
+section h2 {
+    
+    font-size: large;
+    font-size: 3rem;
+    margin-bottom: 40px;
+}
+
+section h2,h3{
+    text-align: center;
+}
+
+section h1 {
+    margin-bottom: 10px;
+}
+
+.container {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+.item {
+    width: 50%;
+    height: 400px;
+    position: relative;
+    transition: 0.5s;
+    clip-path: inset(0);
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    color: white;
+    font-size: 15px;
+    display: flex;
+    align-items: flex-end;
+    padding: 50px;
+    transition: 0.5s;
+
+}
+
+.item:hover .overlay {
+    background: rgb(23, 102, 127, 0.8)
+}
+
+.item:hover {
+    clip-path: inset(35px);
+}
